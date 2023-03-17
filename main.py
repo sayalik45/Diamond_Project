@@ -2,6 +2,7 @@
 import flask
 from flask import Flask,render_template,request
 import numpy as np
+import traceback
 from utils import diamond_prediction
 
 app = Flask(__name__)
@@ -27,10 +28,6 @@ def get_data():
         print(traceback.print_exc())
         return render_template('result.html')
 
-    
-
-
-    
     
 
 if __name__ == "__main__":
