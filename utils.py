@@ -27,8 +27,7 @@ class diamond_prediction():
         color = self.data['html_color']
         cut = self.data['html_cut']
         clarity = self.data['html_clarity']
-        depth = self.data['html_depth']
-        table = self.data['html_table']
+    
         x = self.data['html_x']
         y = self.data['html_y']
         z = self.data['html_z']
@@ -42,11 +41,10 @@ class diamond_prediction():
         #clarity
         user_data[2]=self.project_data['clarity'][clarity]
 
-        user_data[3]=depth
-        user_data[4]=table
-        user_data[5]=x
-        user_data[6]=y
-        user_data[7]=z
+        
+        user_data[3]=x
+        user_data[4]=y
+        user_data[5]=z
 
         #color
         search_color='color_'+color ##(color_E)

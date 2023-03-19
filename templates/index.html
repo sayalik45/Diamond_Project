@@ -20,22 +20,23 @@
 </center>
     <form action="/get_data" method="post">
         <center>
-        <label>Carat(wt of stones or pearls):</label> <input type='number' step="0.01"  name = 'html_carat' > <br><br>
+        <label>Weight of Diamond (0.2 - 5.01):</label> <input type='number' step="0.01"  name = 'html_carat' > <br><br>
         
-        <label>Color:</label> 
+        <label>Diamond Color(J-worst to D-best):</label> 
         <select name="html_color">
-            <option value="D">D</option>
-            <option value="E">E</option>
-            <option value="F">F</option>
-            <option value="G">G</option>
-            <option value="H">H</option>
-            <option value="I">I</option>
+            
             <option value="J">J</option>
+            <option value="I">I</option>
+            <option value="H">H</option>
+            <option value="G">G</option>
+            <option value="F">F</option>
+            <option value="E">E</option>
+            <option value="D">D</option>
             
             
         </select> <br><br>
         
-        <label>Cut(stone shape):</label> 
+        <label>Quality of Cut:</label> 
         <select name="html_cut">
             <option value="Ideal">Ideal</option>
             <option value="Premium">Premium</option>
@@ -55,15 +56,14 @@
             <option value="VVS2">VVS2</option>
             <option value="VVS1">VVS1</option>
             <option value="IF">IF</option>
-            <option value="IF">IF</option>
+            <option value="I1">I1</option>
             
         </select> <br><br>
         
-        <label>Depth:</label> <input type = 'number' step="0.001" name = 'html_depth'> <br><br>
-        <label>Table:</label> <input type = 'number' step="0.001" name = "html_table"> <br><br>
-        <label>x(Length in mm):</label> <input type = 'number' step = '0.001' name = "html_x"> <br><br>
-        <label>y(Width in mm):</label> <input type = "number" step = '0.001' name = 'html_y'> <br><br>
-        <label>z(Depth in mm):</label> <input type = "number" step = '0.001' name = "html_z"> <br>
+        
+        <label>Length in mm(0 - 10.74):</label> <input type = 'number' step = '0.001' name = "html_x"> <br><br>
+        <label>Width in mm(0-58.9):</label> <input type = "number" step = '0.001' name = 'html_y'> <br><br>
+        <label>Depth in mm(0-31.8):</label> <input type = "number" step = '0.001' name = "html_z"> <br>
             
         </select> <br>
 
@@ -71,7 +71,7 @@
     </form><br><br>
 
 
-    <label>PREDICTED PRICE OF DIAMOND: </label>{{prediction}}
+    <label>PREDICTED PRICE OF DIAMOND: </label>{{prediction}} <label>USD</label>
     </center>
 </body>
 </html>
